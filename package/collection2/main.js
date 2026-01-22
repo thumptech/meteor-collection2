@@ -174,6 +174,7 @@ Mongo.Collection.prototype.attachSchema = function c2AttachSchema(ss, options) {
   }
 
 function getArgumentsAndValidationContext(methodName, args, async) {
+    console.log('getArgumentsAndValidationContext');
     let options = isInsertType(methodName) ? args[1] : args[2];
 
     // Support missing options arg
